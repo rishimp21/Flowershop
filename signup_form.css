@@ -1,3 +1,14 @@
+:root {
+  --primary:       #d81b60;
+  --primary-light: #f06292;
+  --primary-dark:  #880e4f;
+  --bg-section:    #fce4ec;
+  --border:        #f8bbd0;
+  --star:          #ffd54f;
+  --text:          #444444;
+  --footer-bg:     #1c0a14;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +20,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #43c6f5 0%, #7b4fd4 50%, #e040fb 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 50%, var(--primary-dark) 100%);
   position: relative;
   overflow: hidden;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -19,7 +30,7 @@ body {
   width: 380px;
   position: relative;
   z-index: 10;
-  background-color: white;
+  background: var(--bg-section);
   border-radius: 16px;
   padding: 48px 40px 40px;
   box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.2);
@@ -28,7 +39,7 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 32px;
-  color: #1a1a2e;
+  color: var(--footer-bg);
   font-weight: 700;
   font-size: 2rem;
 }
@@ -41,7 +52,7 @@ h1 {
   display: block;
   font-size: 0.88rem;
   font-weight: 600;
-  color: #0c0b0baa;
+  color: var(--text);
   margin-bottom: 8px;
 }
 
@@ -52,9 +63,10 @@ input {
   font-family: inherit;
   outline: none;
   font-size: 0.95rem;
-  color: #333;
-  border: 1.5px solid #ddd;
+  color: var(--text);
+  border: 1.5px solid var(--border);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  background: #fff;
 }
 
 input::placeholder {
@@ -63,7 +75,7 @@ input::placeholder {
 }
 
 input:focus {
-  border-color: #7b4fd4;
+  border-color: var(--primary-light);
 }
 
 .btn-signup {
@@ -73,9 +85,11 @@ input:focus {
   cursor: pointer;
   font-weight: 700;
   border: none;
-  background: linear-gradient(90deg, #43c6f5, #e040fb);
+  background: linear-gradient(90deg, var(--primary), var(--primary-dark));
   color: #fff;
   letter-spacing: 0.1em;
+  font-family: inherit;
+  font-size: 0.95rem;
 }
 
 .btn-signup:hover {
@@ -94,7 +108,7 @@ input:focus {
   text-align: center;
   border: none;
   background: none;
-  color: gray;
+  color: var(--text);
   font-weight: 700;
   font-size: 0.95rem;
   font-family: inherit;
@@ -103,5 +117,5 @@ input:focus {
 }
 
 .btn-login:hover {
-  color: #7b4fd4;
+  color: var(--primary);
 }

@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Fresh flower bouquets for every occasion">
+    <meta
+      name="description"
+      content="Fresh flower bouquets for every occasion"
+    />
     <title>FlowerShop</title>
     <link
       rel="stylesheet"
@@ -15,20 +18,33 @@
     <div class="container">
       <!--navbar-->
       <nav class="navbar">
-        <img src="image/LM.png" class="logo" alt="logo" />
+        <img src="flowerimage/lm-logo.png" class="logo" alt="logo" />
         <ul class="menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#menu-card">Products</a></li>
+          <li><a href="#menu-card">Our Flowers</a></li>
           <li><a href="#review-container">Review</a></li>
           <li><a href="#footer">Contact</a></li>
         </ul>
         <div class="search-box">
-          <input type="text" placeholder="Search flowers..." id="search">
+          <input type="text" placeholder="Search flowers..." id="search" />
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-        <button class="login-btn">Login</button>
-        <button class="signup-btn">Sign Up</button>
+
+        <div class="auth-buttons">
+          <button
+            class="login-btn"
+            onclick="window.location.href = 'login_form.html'"
+          >
+            Login
+          </button>
+          <button
+            class="signup-btn"
+            onclick="window.location.href = 'signup_form.html'"
+          >
+            Sign Up
+          </button>
+        </div>
       </nav>
 
       <!--Home-->
@@ -52,7 +68,7 @@
 
         <div class="about-container">
           <div class="about-image">
-            <img src="./image/flower7.png" alt="Flower Shop" />
+            <img src="flowerimage/about-img.png" alt="Flower Shop" />
           </div>
 
           <div class="about-text">
@@ -81,87 +97,14 @@
       <section id="menu-card" class="menu-card">
         <h2 class="menu-title">Our Flower Menu</h2>
 
-        <div class="card-container">
-          <!-- Card 1 -->
-          <div class="card">
-            <div class="heart">
-              <i class="fa-sharp fa-solid fa-heart"></i>
-            </div>
-            <img
-              src="./image/colorful-bunches-fresh-roses-displayed-buckets-outside-flower-shop.jpg"
-              alt="Rose Bouquet"
-            />
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-            <h3>Rose Bouquet</h3>
-            <p>₹299</p>
-            <button class="cart-btn">
-              <i class="fa-solid fa-cart-shopping"></i>
-              Add to Cart
-            </button>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="card">
-            <div class="heart">
-              <i class="fa-sharp fa-solid fa-heart"></i>
-            </div>
-            <img
-              src="./image/pexels-fotios-photos-2106037.jpg"
-              alt="Tulip Bouquet"
-            />
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-            <h3>Tulip Bouquet</h3>
-            <p>₹499</p>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="card">
-            <div class="heart">
-              <i class="fa-sharp fa-solid fa-heart"></i>
-            </div>
-            <img src="./image/pexels-valeriya-74512.jpg" alt="Mixed Flowers" />
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-            <h3>Mixed Bouquet</h3>
-            <p>₹399</p>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="card">
-            <div class="heart">
-              <i class="fa-sharp fa-solid fa-heart"></i>
-            </div>
-            <img
-              src="./image/pexels-marcelo-joaquim-3414006-5241811.jpg"
-              alt="Sunflower"
-            />
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-            <h3>Sunflower Bouquet</h3>
-            <p>₹349</p>
-          </div>
+        <div class="card-container" id="product-container">
+          <!-- Card -->
+        </div>
+         <!-- View More Button -->
+        <div class="view-more">
+          <a href="menu.html">
+            <button>View More →</button>
+          </a>
         </div>
       </section>
 
@@ -170,7 +113,7 @@
         <h2>Customer Reviews</h2>
 
         <div class="review-card">
-          <img src="./image/pexels-thisisjooh-27829296.jpg" alt="User" />
+          <img src="flowerimage/review-1.jpg" alt="User" />
           <h3>Priya</h3>
 
           <div class="stars">
@@ -188,7 +131,7 @@
         </div>
 
         <div class="review-card">
-          <img src="./image/pexels-54514172-7810669.jpg" alt="User" />
+          <img src="flowerimage/review-2.png" alt="User" />
           <h3>Arun</h3>
 
           <div class="stars">
@@ -206,7 +149,7 @@
         </div>
 
         <div class="review-card">
-          <img src="./image/pexels-llucams-1964442.jpg" alt="User" />
+          <img src="flowerimage/review-3.jpg" alt="User" />
           <h3>Meena</h3>
 
           <div class="stars">
@@ -245,7 +188,9 @@
           <!-- Contact -->
           <div class="footer-box">
             <h3>Contact</h3>
-            <p><i class="fa-sharp fa-solid fa-location-dot"></i>Chennai, India</p>
+            <p>
+              <i class="fa-sharp fa-solid fa-location-dot"></i>Chennai, India
+            </p>
             <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
             <p><i class="fa-regular fa-envelope"></i>flowershop@gmail.com</p>
           </div>
@@ -257,6 +202,15 @@
             <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
             <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
           </div>
+
+          <!-- WhatsApp Button -->
+          <div class="footer-box">
+            <h3>WhatsApp Order</h3>
+            <a href="#" class="whatsapp" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+              Order Now
+            </a>
+          </div>
         </div>
 
         <!-- Bottom -->
@@ -265,5 +219,14 @@
         </div>
       </footer>
     </div>
+
+    <script src="auth.js">
+      let loginStatus = localStorage.getItem("isLoggedIn");
+
+      if (loginStatus !== "true") {
+        window.location.href = "login_form.html";
+      }
+    </script>
+    <script src="products.js"></script>
   </body>
 </html>

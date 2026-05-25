@@ -11,19 +11,20 @@
         <h1>Signup</h1>
         <div class="field-group">
             <label>Username</label>
-            <input type="text" placeholder="Type Your Username" required>
+            <input type="text" id="signupUsername" placeholder="Type Your Username" required  autocomplete="off">
         </div>
         <div class="field-group">
             <label>E-mail</label>
-            <input type="text" placeholder="Type Your E-mail" required>
+            <input type="text" id="signupEmail" placeholder="Type Your E-mail" required  autocomplete="off">
         </div>
        <div class="field-group">
             <label>Confirm Password</label>
-            <input type="password" placeholder="Type Your Password" required>
+            <input type="password" id="signupPassword" placeholder="Type Your Password" required autocomplete="new-password">
         </div>
-        <button type="submit" class="btn-signup">Sing Up</button>
+        <button type="button" class="btn-signup" onclick="signup()">Sing Up</button>
         <div class="signup-divider">Already have an account?</div>
-        <button class="btn-login" onclick="window.location.href='login_form.html'">Login</button>
+        <button type="button" class="btn-login" onclick="window.location.href='login_form.html'">Login</button>
     </div>
+    <script src="auth.js"></script>
 </body>
 </html>
